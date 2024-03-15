@@ -1,0 +1,33 @@
+body {
+    background-color: lightblue;
+}
+
+
+/*
+
+body{
+    background-color: #00f121f;
+    background-image: url(ball.webp);
+    background-repeat-y: no-repeat;
+    background-size:cover;
+    background-size: 110%;
+
+
+    color: #000000;
+}
+
+body *{
+
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: normal;
+    margin: 0;
+}
+
+a, a:hover, a:visited{
+    color: #023cf4;
+    text-decoration: none;
+}
+*/

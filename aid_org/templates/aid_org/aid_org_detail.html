@@ -1,0 +1,11 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<div class="article-detail">
+    <div class="aid_org">
+        <h2>{{aid_org.name}}</h2>
+        <img src="{{ aid_org.thumb.url }}">
+        <p>{{aid_org.description}}</p>
+        <p>{{aid_org.date}}</p>
+</div>
+{% endblock %}

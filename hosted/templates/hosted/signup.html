@@ -1,0 +1,22 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+    <h1>Sign Up to be hosted</h1>
+    <form class = "site-form" action = "index.html" method = "post">
+        {{ form }}
+        <input type="submit" value = "Signup">
+    </form>
+
+
+
+
+<!---
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Sign Up</button>
+    </form>
+    --->
+
+{% endblock %}
+
