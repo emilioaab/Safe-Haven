@@ -1,13 +1,13 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-<img src="{{ logo.image.url }}" alt="Logo">
+
 <h1>Aid Organizations List</h1>
 <div class="aid_org">
     {% for aid_org in aid_org %}
     <div class="aid_org">
         <h2><a href="{% url 'aid_org:detail' aid_org.slug %}">{{aid_org.name}}</a></h2>
-        <img src="{{ aid_org.image.url }}">
+        <img class="thumbnail" src="{{ aid_org.thumb.url }}">
         <p>{{aid_org.snippet}}</p>
         <p>{{aid_org.date}}</p>
     </div>

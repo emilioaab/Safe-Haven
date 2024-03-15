@@ -1,0 +1,16 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+    <h1>Log in as a guest</h1>
+    <form class = "site-form" action = "{% url 'hosted:login' %}" method = "post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value = "Login">
+    </form>
+
+
+
+
+
+{% endblock %}
+

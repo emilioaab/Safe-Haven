@@ -2,6 +2,15 @@ body {
     background-color: lightblue;
 }
 
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.thumbnail {
+    width: 150px;
+    height: auto;
+}
 
 /*
 
