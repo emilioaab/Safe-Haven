@@ -6,7 +6,7 @@ Ilan Travin - ilantr@ac.sce.ac.il
 
 Emil Abdumalikov - emilab@ac.sce.ac.il
 
-Nitsan Steiner - nitzast@ac.sce.ac.il
+Nitzan Steiner - nitzast@ac.sce.ac.il
 
 Description:
 
