@@ -23,6 +23,10 @@ hosted family -
 Environment: the code was devloped on pycharm, the framework is django, most of the code is python, but we have some html and css code. Database: SQlite3
 
 How to run:
+for windows:
+1. open terminal through pycharm
+2. myenv\Scripts\activate.bat
+3. py manage.py runserver
 
 for macos:
 1. open terminal through pycharm
