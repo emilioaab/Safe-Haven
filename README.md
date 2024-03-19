@@ -23,6 +23,8 @@ hosted family -
 Environment: the code was devloped on pycharm, the framework is django, most of the code is python, but we have some html and css code. Database: SQlite3
 
 How to run:
+https://www.w3schools.com/django/django_create_virtual_environment.php
+
 for windows:
 1. open terminal through pycharm
 2. myenv\Scripts\activate.bat
