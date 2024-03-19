@@ -7,7 +7,9 @@
     {% for aid_org in aid_org %}
     <div class="aid_org">
         <h2><a href="{% url 'aid_org:detail' aid_org.slug %}">{{aid_org.name}}</a></h2>
-        <img class="thumbnail" src="{{ aid_org.thumb.url }}">
+        <a href="{% url 'aid_org:detail' aid_org.slug %}"> <!-- This will link to the detail page of the aid_org -->
+            <img class="thumbnail" src="{{ aid_org.thumb.url }}">
+        </a>
         <p>{{aid_org.snippet}}</p>
         <p>{{aid_org.date}}</p>
     </div>

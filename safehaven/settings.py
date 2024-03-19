@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'aid_org',
     'hosted',
+    'success_story',
 ]
 
 MIDDLEWARE = [

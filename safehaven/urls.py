@@ -12,6 +12,7 @@ urlpatterns = [
     path('aid_org_list/',include('aid_org.urls')),
     path('about/',views.about, name='about'),
     path('',views.homepage, name='homepage'),
+    path('success_story/', include('success_story.urls')),
 
 ]
 

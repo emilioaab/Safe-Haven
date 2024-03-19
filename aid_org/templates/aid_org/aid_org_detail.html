@@ -4,8 +4,10 @@
 <div class="article-detail">
     <div class="aid_org">
         <h2>{{aid_org.name}}</h2>
-        <img src="{{ aid_org.thumb.url }}">
+        <a href="{{ aid_org.website }}"> <!-- Assuming 'website' is the field in your model that contains the URL -->
+            <img src="{{ aid_org.thumb.url }}">
+        </a>
         <p>{{aid_org.description}}</p>
         <p>{{aid_org.date}}</p>
-</div>
+    </div>
 {% endblock %}
