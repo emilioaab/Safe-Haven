@@ -6,7 +6,7 @@ class TestForms(unittest.TestCase):
     def test_story_Form_valid_Data(self): # test if the form is valid
         form = storyForm(data=
                          {'name': 'story number 1',
-                          'date': '2020-12-12',
+                          'date': '09/03/2024',
                           'text': 'this is my success story!'})
         self.assertTrue(form.is_valid())  # form is valid so true expected
 
