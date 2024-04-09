@@ -1,21 +1,29 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
+from django.contrib.auth.models import Group
 
 
 # Create your views here.
 
+from .forms import CustomUserCreationForm
+
 def signup_view(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
-            form.save()
-            # log the user in
             user = form.save()
+            category = form.cleaned_data.get('category')
+            if category == 'host':
+                group = Group.objects.get(name='מארח')  # replace 'host' with the actual group name for hosts
+                user.groups.add(group)
+            elif category == 'hosted':
+                group = Group.objects.get(name='מתארח')  # replace 'מתארח' with the actual group name for hosted users
+                user.groups.add(group)
             login(request, user)
             return redirect('homepage')
     else:
-        form = UserCreationForm()
+        form = CustomUserCreationForm()
 
     return render(request, 'hosted/signup.html', {'form': form})
 

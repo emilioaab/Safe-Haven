@@ -41,6 +41,12 @@ INSTALLED_APPS = [
     'aid_org',
     'hosted',
     'success_story',
+    'Donations',
+    'Report',
+    'forum',
+    'host',
+
+
 ]
 
 MIDDLEWARE = [
